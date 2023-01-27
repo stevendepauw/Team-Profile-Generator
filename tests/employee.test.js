@@ -9,8 +9,22 @@ describe('employee'), () => {
 
     //testing setting name with constructor
     it('should set employee name', () => {
-        const testName = 'Bill';
+        const testName = 'Steven';
         const empTest = new Employee(testName);
         expect(empTest.name).toBe(testName)
+    });
+
+    //testing setting id with constructor
+    it('should set employee id', () => {
+        const testId = 5;
+        const empTest = new Employee('Steven', testId);
+        expect(empTest.id).toBe(testId);
+    });
+
+    //testing setting email with constructor 
+    it('should set the employee email', () => {
+        const testEmail = 'notReal';
+        const empTest = new Employee('Steven', 5, testEmail);
+        expect(empTest.email).toBe(testEmail);
     });
 }
