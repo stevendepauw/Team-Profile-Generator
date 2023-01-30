@@ -1,6 +1,6 @@
 const Engineer = require('../lib/engineer');
 
-describe('engineer'), () => {
+describe('engineer', () => {
     //Testing instantiation
     it('should instantiate an engineer', () => {
         const empTest = new Engineer();
@@ -32,7 +32,7 @@ describe('engineer'), () => {
      it('should set the engineer github', () => {
         const testGit = 'fakeGit';
         const empTest = new Engineer('Steven', 5, 'not real', testGit);
-        expect(empTest.githhub).toBe(testGit);
+        expect(empTest.github).toBe(testGit);
     });
 
-}
+});

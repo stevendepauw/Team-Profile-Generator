@@ -1,6 +1,6 @@
 const  Manager = require('../lib/manager');
 
-describe('manager'), () => {
+describe('manager', () => {
     //Testing instantiation
     it('should instantiate a manager', () => {
         const empTest = new Manager();
@@ -32,7 +32,7 @@ describe('manager'), () => {
      it('should set the managers office number', () => {
         const testOffice = 'fakeOffice';
         const empTest = new Manager('Steven', 5, 'not real', testOffice);
-        expect(empTest.school).toBe(testOffice);
+        expect(empTest.officeNumber).toBe(testOffice);
     });
 
-}
+});

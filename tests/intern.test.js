@@ -1,6 +1,6 @@
 const Intern = require('../lib/intern');
 
-describe('intern'), () => {
+describe('intern', () => {
     //Testing instantiation
     it('should instantiate an intern', () => {
         const empTest = new Intern();
@@ -35,4 +35,4 @@ describe('intern'), () => {
         expect(empTest.school).toBe(testSchool);
     });
 
-}
+});
